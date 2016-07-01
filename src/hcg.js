@@ -10,7 +10,7 @@ function hcgConvert(o) {
       max = Math.max(r, g, b),
       d = max - min,
       h = NaN,
-      gr = min / (1 - d);
+      gr = min === 0 ? 0 : min / (1 - d);
   if (d) {
     if (r === max) h = (g - b) / d + (g < b) * 6;
     else if (g === max) h = (b - r) / d + 2;

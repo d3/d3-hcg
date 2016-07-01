@@ -8,31 +8,28 @@
     "color",
     "hcg"
   ],
-  "homepage": "https://d3js.org/d3-hcg/",
+  "homepage": "https://github.com/acterhd/d3-hcg",
   "license": "BSD-3-Clause",
-  "author": {
-    "name": "Mike Bostock",
-    "url": "http://bost.ocks.org/mike"
-  },
+  "author": "Alexey S <acterhd@gmail.com>",
   "main": "build/d3-hcg.js",
   "jsnext:main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/d3/d3-hcg.git"
+    "url": "https://github.com/acterhd/d3-hcg.git"
   },
   "scripts": {
     "pretest": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -g d3-color:d3 -n d3 -o build/d3-hcg.js -- index.js",
     "test": "tape 'test/**/*-test.js' && eslint index.js src test",
     "prepublish": "npm run test && uglifyjs --preamble \"$(preamble)\" build/d3-hcg.js -c -m -o build/d3-hcg.min.js",
-    "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cp build/d3-hcg.js ../d3.github.com/d3-hcg.v0.0.js && cp build/d3-hcg.min.js ../d3.github.com/d3-hcg.v0.0.min.js && cd ../d3.github.com && git add d3-hcg.v0.0.js d3-hcg.v0.0.min.js && git commit -m \"d3-hcg ${VERSION}\" && git push && cd - && zip -j build/d3-hcg.zip -- LICENSE README.md build/d3-hcg.js build/d3-hcg.min.js"
+    "postpublish": "git push && git push --tags && zip -j build/d3-hcg.zip -- LICENSE README.md build/d3-hcg.js build/d3-hcg.min.js"
   },
   "dependencies": {
-    "d3-color": "~0.5.0"
+    "d3-color": "1"
   },
   "devDependencies": {
     "eslint": "2",
     "package-preamble": "0.0",
-    "rollup": "0.31",
+    "rollup": "0.33",
     "tape": "4",
     "uglify-js": "2"
   }
