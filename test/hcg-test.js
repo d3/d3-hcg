@@ -126,22 +126,6 @@ tape("hcg(format) parses the specified format and converts to hcg", function(tes
   test.end();
 });
 
-tape("hcg(format) ignores the hue if the saturation is <= 0", function(test) {
-  test.end();
-});
-
-tape("hcg(format) ignores the hue and saturation if the lightness is <= 0 or >= 1", function(test) {
-  test.end();
-});
-
-tape("hcg(format) ignores all channels if the alpha is <= 0", function(test) {
-  test.end();
-});
-
-tape("hcg(format) does not lose precision when parsing hcg formats", function(test) {
-  test.end();
-});
-
 tape("hcg(format) returns undefined channel values for unknown formats", function(test) {
   test.hcgEqual(d3_hcg.hcg("invalid"), NaN, NaN, NaN, NaN);
   test.end();
