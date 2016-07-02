@@ -41,7 +41,7 @@ hcgPrototype.rgb = function() {
       g = isNaN(this.g) ? 0 : this.g,
       a = this.opacity,
       x = c * (1 - Math.abs((h / 60) % 2 - 1)),
-      m = g * (1.0 - c);
+      m = g * (1 - c);
   return h < 60 ? hcg2rgb(c, x, 0, m, a)
       : h < 120 ? hcg2rgb(x, c, 0, m, a)
       : h < 180 ? hcg2rgb(0, c, x, m, a)
