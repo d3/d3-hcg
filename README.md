@@ -1,6 +1,6 @@
 # d3-hcg
 
-This module implements the HCG (Hue, Chroma, Grayness) color space.
+This module implements the [HCG](https://github.com/acterhd/hcg-color) (Hue, Chroma, Grayness) color space.
 
 ## Installing
 
