@@ -8,14 +8,14 @@
     "color",
     "hcg"
   ],
-  "homepage": "https://github.com/acterhd/d3-hcg",
+  "homepage": "https://github.com/d3/d3-hcg",
   "license": "BSD-3-Clause",
   "author": "Alexey S <acterhd@gmail.com>",
   "main": "build/d3-hcg.js",
   "jsnext:main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/acterhd/d3-hcg.git"
+    "url": "https://github.com/d3/d3-hcg.git"
   },
   "scripts": {
     "pretest": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -g d3-color:d3 -n d3 -o build/d3-hcg.js -- index.js",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "eslint": "2",
     "package-preamble": "0.0",
-    "rollup": "0.33",
+    "rollup": "0.34",
     "tape": "4",
     "uglify-js": "2"
   }

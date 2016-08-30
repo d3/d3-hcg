@@ -8,7 +8,7 @@ If you use NPM, `npm install d3-hcg`. Otherwise, download the [latest release](h
 
 ```html
 <script src="https://d3js.org/d3-color.v1.min.js"></script>
-<script src="https://npmcdn.com/d3-hcg@0.0"></script>
+<script src="https://unpkg.com/d3-hcg@0.0"></script>
 <script>
 
 var yellow = d3.hcg("yellow"); // {h: 60, c: 1, g: 0, opacity: 1}
