@@ -1,6 +1,6 @@
 {
   "name": "d3-hcg",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "The HCG (Hue, Chroma, Grayness) color space.",
   "keywords": [
     "d3",
