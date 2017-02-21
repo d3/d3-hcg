@@ -13,6 +13,7 @@
   "author": "Alexey S <acterhd@gmail.com>",
   "main": "build/d3-hcg.js",
   "jsnext:main": "index",
+  "module": "index",
   "repository": {
     "type": "git",
     "url": "https://github.com/d3/d3-hcg.git"
